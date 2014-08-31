@@ -1,0 +1,224 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+html, body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #585858;
+}
+
+
+nav a {
+	font-size: 14px;
+	color: #585858;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 8px 20px 8px 20px;
+}
+
+#firstnavlink {
+	font-size: 30px;
+	color: #585858;
+}
+
+#sky {
+	background-color: #00CCFF;
+	height: 500px;
+	width: 100%;
+}
+
+#cirruscloud {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	width: 200px;
+	height: 20px;
+	border-radius: 50%;
+	opacity: .8;
+	-webkit-filter: blur(10px);
+	background: white;
+}
+
+#cirruscloud2 {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 150px;
+	height: 20px;
+	border-radius: 50%;
+	opacity: .8;
+	-webkit-filter: blur(10px);
+	background: white;
+}
+
+#cloudbase {
+	height: 40px;
+	width: 100px;
+	left: 10%;
+	top: 20%;
+	background-color: white;
+	-webkit-animation: cloudmigrate 100s ease 0s infinite alternate; 
+	animation: cloudmigrate 100s  ease 0s infinite alternate;
+}
+
+@-webkit-keyframes cloudmigrate {
+	0% {
+		-webkit-transform: translate3d(0px,0,0);
+	}
+	100% {
+		-webkit-transform: translate3d(1500px,0,0);
+	}
+}
+
+/* standard */ 
+
+@keyframes cloudmigrate {
+	0% {
+		-webkit-transform: translate3d(0px,0,0);
+	}
+	100% {
+		-webkit-transform: translate3d(500px,0,0);
+	}
+}
+
+@-webkit-keyframes smallcloudmigrate {
+0% {
+		-webkit-transform: translate3d(0px,0,0) scale(.3,.3);
+	}
+	100% {
+		-webkit-transform: translate3d(1500px,0,0) scale(.3,.3);
+	}
+}
+
+/* standard */ 
+
+@keyframes smallcloudmigrate {
+	0% {
+		-webkit-transform: translate3d(0px,0,0,180deg) scale(.3,.3);
+	}
+	100% {
+		-webkit-transform: translate3d(500px,0,0,180deg) scale(.3,.3);
+	}
+}
+
+#cloudbase2 {
+	height: 40px;
+	width: 100px;
+	left: -5%;
+	top: 40%;
+	background-color: white;
+	-webkit-animation: smallcloudmigrate 70s ease 0s infinite alternate; 
+	animation: smallcloudmigrate 70s ease 0s infinite alternate;
+	filter: fliph;
+}
+
+#cloudbase3 {
+	height: 40px;
+	width: 100px;
+	left: -10%;
+	top: 40%;
+	background-color: white;
+	-webkit-animation: cloudmigrate 150s ease 0s infinite alternate; 
+	animation: cloudmigrate 150s ease 0s infinite alternate;
+}
+
+.cloudfluff1 {
+	left: -20px;
+	top: 0px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	background-color: white;
+	position: absolute;
+}
+
+.cloudfluff2 {
+	left: 4px;
+	top: -10px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50px;
+	background-color: white;
+	position: absolute;
+}
+
+.cloudfluff3 {
+	width: 40px;
+	height: 40px;
+	top: -20px;
+	left: 5px;
+	border-radius: 50px;
+	background-color: white;
+}
+
+.cloudfluff4 {
+	top: -20px;
+	left: 80px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+	background-color: white;
+	position: absolute;
+}
+
+.cloudfluff5 {
+	top: -5px;
+	left: 80px;
+	border-radius: 50px;
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background-color: white;
+}
+
+
+
+.cloudfluff6 {
+	top: -40px;
+	left: 20px;
+	height: 70px;
+	width: 70px;
+	border-radius: 50px;
+	background-color: white;
+	position: absolute;
+}
+
+.cloudfluff7 {
+	top: 10px;
+	left: 20px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	background-color: white;
+	position: absolute;
+}
+
+.cloudfluff8 {
+	top: -10px;
+	left: 50px;
+	height: 70px;
+	width: 70px;
+	border-radius: 50px;
+	background-color: white;
+	position: absolute;
+}
+
+.footer{
+	left: 90%;
+	height: 20px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #585858;
+}
+
+#aboutpage {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	height: 500px;
+	color: white;
+	background-color: #00CCFF;
+}
+
